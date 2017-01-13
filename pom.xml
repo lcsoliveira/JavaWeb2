@@ -26,23 +26,6 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<dependencies>
-					<dependency>
-						<groupId>com.sun.faces</groupId>
-						<artifactId>jsf-api</artifactId>
-						<version>2.2.13</version>
-					</dependency>
-					<dependency>
-						<groupId>com.sun.faces</groupId>
-						<artifactId>jsf-impl</artifactId>
-						<version>2.2.13</version>
-					</dependency>
-					<dependency>
-						<groupId>javax.el</groupId>
-						<artifactId>javax.el-api</artifactId>
-						<version>2.2.1</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
@@ -127,19 +110,16 @@
 			<groupId>com.sun.faces</groupId>
 			<artifactId>jsf-api</artifactId>
 			<version>2.2.13</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.faces</groupId>
 			<artifactId>jsf-impl</artifactId>
 			<version>2.2.13</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.el</groupId>
 			<artifactId>javax.el-api</artifactId>
 			<version>2.2.1</version>
-			<scope>provided</scope>
 		</dependency>
 
 		<!-- Primefaces -->
