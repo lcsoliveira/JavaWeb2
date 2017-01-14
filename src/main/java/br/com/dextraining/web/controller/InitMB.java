@@ -4,19 +4,20 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 @ManagedBean(name = "initMB")
-@SessionScoped
 public class InitMB {
+	private String nome;
 
 	public String getNome() {
 		return nome;
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		this.nome = nome + "-Ok";
 	}
 
-	private String nome = "Raoni";
-	
+	public void salvar() {
+		System.out.println("Salvo: " + nome);
+	}
 	
 	
 }
