@@ -22,9 +22,7 @@ public class TesteServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		BufferedReader reader = req.getReader();
-		String valor = reader.readLine();
-		req.getSession().setAttribute("VALOR", valor);
+		req.getSession().setAttribute("VALOR", req.getParameter("valor"));
 	}
 
 	
