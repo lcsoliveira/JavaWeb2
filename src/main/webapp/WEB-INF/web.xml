@@ -16,7 +16,16 @@
         <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
         <param-value>server</param-value>
     </context-param>
-    <servlet>
+     <servlet>
+        <servlet-name>TesteServlet</servlet-name>
+        <servlet-class>br.com.dextraining.web.controller.TesteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TesteServlet</servlet-name>
+        <url-pattern>/teste.html</url-pattern>
+    </servlet-mapping>
+    
+    <!-- servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
     </servlet>
@@ -26,5 +35,5 @@
         <url-pattern>*.jsf</url-pattern>
         <url-pattern>*.xhtml</url-pattern>
         <url-pattern>*.faces</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping-->
 </web-app>
