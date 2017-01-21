@@ -1,0 +1,32 @@
+<ui:composition 
+	xmlns="http://www.w3.org/1999/xhtml"  
+    xmlns:h="http://java.sun.com/jsf/html"  
+    xmlns:f="http://java.sun.com/jsf/core"  
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    template="/layout.xhtml">
+
+	
+  <ui:define name="conteudo">
+	
+		<p:dataTable var="usuario" value="#{listaDeUsuarioMB.usuarios}">
+		
+		    <p:column headerText="Usuario">
+		        <h:outputText value="#{usuario.usuario}" />
+		    </p:column>	 
+		    
+		    <p:column headerText="Senha">
+		        <h:outputText value="#{usuario.senha}" />
+		    </p:column>
+			
+		</p:dataTable>
+		
+		<br/>
+		
+		<h:form>
+		 	<p:commandButton value="Cadastrar" action="#{adicionarUsuarioMB.novoUsuario}"/>
+		</h:form>
+	
+  </ui:define> 
+  <ui:define name="rodape"></ui:define>
+</ui:composition>  

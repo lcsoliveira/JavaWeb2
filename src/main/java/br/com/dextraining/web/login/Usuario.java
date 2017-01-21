@@ -1,14 +1,14 @@
 package br.com.dextraining.web.login;
 
-import javax.faces.bean.ManagedBean;
-
-@ManagedBean(name="usuario'")
 public class Usuario {
 
+	//Atributos pertencentes a classe usuario
+		
 	private String usuario;
 	
 	private String senha;
 
+	
 	public String getUsuario() {
 		return usuario;
 	}
@@ -23,5 +23,10 @@ public class Usuario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	} 
+	}
+	
+	
+	
+	
+	
 }

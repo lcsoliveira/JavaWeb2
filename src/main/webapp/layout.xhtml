@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:p="http://primefaces.org/ui">
+
+  <h:head>
+    <title>
+    Dextraining
+    </title> 
+  </h:head>
+  
+  <h:body>  
+    
+    <div>
+      <ui:insert name="cabecalho">
+       Ola #{loginMB.usuario.usuario} <!-- Aqui estamos "concatenando" o nome do usuario que está logando  --> 
+      </ui:insert>     
+    </div>
+     
+     <div>
+	     <ui:insert name="menu">
+	     Menu
+	      </ui:insert>     
+     </div>
+      
+    <div> 
+    	<ui:insert name="conteudo"/>
+    </div>  
+    
+    <div>
+      <ui:insert name="rodape">
+       RODAPÉ
+      </ui:insert>     
+    </div> 
+  </h:body> 
+</html>

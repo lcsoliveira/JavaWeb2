@@ -9,13 +9,27 @@
       
     <h:body>  
       	<h:form>
+      	
       	<p:panel>
-     	Login:  <p:inputText id="login" value="#{initMB.nome}"/>
+     	Login:  <p:inputText id="usuario" value="#{loginMB.usuario.usuario}"/>
       	</p:panel>
 		      
+		      <br/>
+		      
+		<p:panel>
+     	Senha:  <p:password id="senha" value="#{loginMB.usuario.senha}"/>
+      	</p:panel>      
       
-       	 <p:commandButton value="Salvar" action="#{initMB.salvar}" update="campoTexto"/>
-        </p:panel>
+      		<br/>
+      			
+       	 <p:commandButton value="login" action="#{loginMB.login}" update="@form"/>
+        
+      
+      
+        <p:outputPanel rendered="#{!loginMB.usuarioLogado and loginMB.usuario.usuario !=null}">
+        Usuário e/ou senha Inválidos
+        </p:outputPanel>
+        
         </h:form>
     </h:body>  
 </html>  

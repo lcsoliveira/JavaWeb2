@@ -1,7 +1,6 @@
 package br.com.dextraining.web.controller;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 
 @ManagedBean(name = "initMB")
 public class InitMB {
